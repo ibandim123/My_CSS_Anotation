@@ -1,0 +1,132 @@
+.page-body {
+    background-color: #1C1C1C;
+/*Alinhamento ao centro*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  padding: 0;
+  box-sizing: border-box;
+  /* Plano de fundo gradiente */
+  z-index: 100;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.5) 0%,
+    rgba(0,0,0,0.5) 50%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0) 100%
+  );
+  background-size: 100% 2px;
+}
+
+
+.page-body .section #load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Quantico', sans-serif;
+  letter-spacing: 5px;
+  color: #FFFAFA;
+  font-size: 50px;
+  text-shadow: 2px 1px 1px #FF00FF;
+  animation: glitch 3s 3s infinite; /* Efeito de Quebra*/
+
+}
+
+.page-body .section .buttons #optionA {
+    width: 20rem;
+    height: 5.4rem;
+    border-radius: 0.8rem;
+    font:700 2.0rem Quantico;
+ 
+    position: relative;
+    color:#FF8C00;
+    background:#363636;
+    text-decoration: none;
+    border-style: hidden;
+
+
+    transition: background-color 0.3s; 
+}
+.page-body .section .buttons #optionB {
+    width: 20rem;
+    height: 5.4rem;
+    border-radius: 0.8rem;
+    font:700 2.0rem Quantico;
+    margin: 10px;
+ 
+    position: relative;
+    color:#FF8C00;
+    background:#363636;
+    text-decoration: none;
+    border-style: hidden;
+
+
+    transition: background-color 0.3s; 
+}
+.page-body .section .buttons #optionA:hover {
+    background-color: #1C1C1C;
+}
+.page-body .section .buttons #optionB:hover {
+    background-color: #1C1C1C;
+}
+
+/*Scanner na tela*/
+
+.scanline {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.03);
+	animation: scanline 6s linear infinite;
+}
+
+
+@keyframes scanline {
+	0.01% {
+		transform: translatey(-100%);
+	}
+	99.99% {
+		transform: translatey(0);
+	}
+	100% {
+		transform: translatey(-100%);
+	}
+}
+
+/* Efeito de Quebra*/
+
+.page-body .section #load::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 2s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.page-body .section #load::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch {
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
