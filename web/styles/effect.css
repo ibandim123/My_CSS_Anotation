@@ -1,0 +1,30 @@
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background:black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    padding: 0;
+    box-sizing: border-box;
+    animation: up 0.4s 0.2s backwards;
+}
+button {
+    height: 10rem;
+    margin: 0 auto;
+    width: min(80vw, 500px);
+    border-radius: 20px;
+    background: orangered;
+}
