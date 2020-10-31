@@ -1,0 +1,5 @@
+/* Efeito gradiente no fundo da tela web*/
+    
+    background: linear-gradient(114.44deg, #7433FF 0%, #FFA3FD 100%);
+
+/* ###*/
