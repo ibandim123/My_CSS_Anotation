@@ -2,12 +2,13 @@
     
     background: linear-gradient(114.44deg, #7433FF 0%, #FFA3FD 100%);
 
-/* ###*/
 /*Efeito tela borrada */
    filter:blur(number.px);
 
+
 /* Efeito de Aproximação de objeto*/
   transform: scale(number);
+
 
 /* Efeito de opacidade */  
    opacity: number;
