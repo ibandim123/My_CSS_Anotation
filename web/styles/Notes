@@ -23,6 +23,10 @@
                             </div>
 </div>                          
 
+/* item da lista na horizontal */
+ display: inline; 
+ 
+ 
 * CSS *
 .modal-overlay {
     display: flex;
