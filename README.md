@@ -1,6 +1,6 @@
 <p align="center"><img src="https://miro.medium.com/max/3840/1*ivFgKvAvroJmYWyKgADn2A.jpeg" /></p>
 
-<p align="center">CSS notes</p>
+<h1 align="center">CSS notes</h1>
 
 - [My CSS Anotation](#notes)
 
