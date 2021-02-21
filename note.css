@@ -18,6 +18,11 @@
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
     0 0 80px #2196f3;
+    /* Usar com letras */
+    color:#008cff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px #2196f3, 0 0 10px #2196f3,
+    0 0 80px #2196f3;
 
 /* Pop-up */
  <div class="modal-overlay">
