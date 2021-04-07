@@ -10,7 +10,7 @@
 I put here all my studies about CSS 
 
 
-## For more view acess my Codepen
+## For more view access my Codepen
 
 - [My Codepen](https://codepen.io/your-work)
 
