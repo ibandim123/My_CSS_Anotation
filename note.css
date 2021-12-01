@@ -24,13 +24,19 @@
     text-shadow: 0 0 1px #2196f3, 0 0 10px #2196f3,
     0 0 80px #2196f3;
 
+/* Efeito Fundo de Vidro */
+
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(1rem);
+
 /* Pop-up */
- <div class="modal-overlay">
+ 
+    <div class="modal-overlay">
                             <div class="modal">
                                 <div class="modal-content">
                                 </div>
                             </div>
-</div>                          
+    </div>                          
 
 /* item da lista na horizontal */
  display: inline; 
@@ -60,7 +66,7 @@
     opacity: .5;
   }
 }
-
+===========================================================================================================================================================
 
 
 
